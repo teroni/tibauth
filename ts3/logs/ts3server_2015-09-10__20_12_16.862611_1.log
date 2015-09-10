@@ -1,0 +1,6 @@
+2015-09-10 20:12:17.922889|INFO    |VirtualServer |  1| listening on 0.0.0.0:9987
+2015-09-10 20:12:17.923636|INFO    |VirtualServer |  1| client 'server'(id:0) added privilege key for servergroup 'Server Admin'(id:6)
+2015-09-10 20:12:17.923701|WARNING |VirtualServer |  1| --------------------------------------------------------
+2015-09-10 20:12:17.923737|WARNING |VirtualServer |  1| ServerAdmin privilege key created, please use the line below
+2015-09-10 20:12:17.923770|WARNING |VirtualServer |  1| token=taulRRzZ3uUUtyLVWJZaVrGHfzWPpGGDG+cQQ52E
+2015-09-10 20:12:17.923802|WARNING |VirtualServer |  1| --------------------------------------------------------

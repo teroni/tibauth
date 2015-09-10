@@ -1,0 +1,34 @@
+web:
+  build: .
+  ports:
+   - "80:80"
+  volumes:
+   - ./web/:/var/www/laravel
+   - ./config/:/var/www/laravel/config
+   - ./.env:/var/www/laravel/.env
+   - ./forum-config/config.php:/var/www/laravel/public/forums/config.php
+   - ./forum-config/yml:/var/www/laravel/public/forums/config
+
+ts3:
+  image: devalx/docker-teamspeak3
+  ports:
+   - "10011:10011"
+   - "30033:30033"
+   - "9987:9987/udp"
+  volumes:
+   - ts3/:/teamspeak3
+
+ircd:
+  image: luzifer/inspircd
+  ports:
+   - "6667:6667"
+   - "6697:6697"
+   - "7000:7000"
+   - "7001:7001"
+  volumes:
+   - sconfig/inspircd/:/inspircd/conf
+
+atheme:
+  image: jacobhenner/atheme-docker
+  volumes:
+   - sconfig/atheme/:/atheme/etc

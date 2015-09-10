@@ -1,0 +1,4 @@
+'routes' => function(ExtensionInterface $extension, Application $app)
+	{
+		{{routes}}
+	},

@@ -1,0 +1,209 @@
+/**
+* Part of the Platform Installer extension.
+*
+* NOTICE OF LICENSE
+*
+* Licensed under the Cartalyst PSL License.
+*
+* This source file is subject to the Cartalyst PSL License that is
+* bundled with this package in the LICENSE file.
+*
+* @package    Platform Installer extension
+* @version    2.0.0
+* @author     Cartalyst LLC
+* @license    Cartalyst PSL
+* @copyright  (c) 2011-2014, Cartalyst LLC
+* @link       http://cartalyst.com
+*/
+
+* { margin: 0; padding: 0; }
+
+body {
+	background-color: #f7f7f7;
+}
+.install {
+	text-align: center;
+}
+
+.install > header {
+	position: absolute;
+	top:40px;
+	width:100%;
+	z-index: 2;
+}
+
+.install > section {
+	background:#f7f7f7;
+	width: 100%;
+	position:absolute;
+	z-index: 3;
+	top:200px;
+	bottom:0;
+}
+
+.brand {
+	position:relative;
+	bottom: 0px;
+
+	-webkit-animation: bot_float ease 3s 4;
+	-moz-animation: bot_float ease 3s 4;
+	-ms-animation: bot_float ease 3s 4;
+	animation: bot_float ease 3s 4;
+}
+
+.brand__image img {
+	max-width: 280px;
+}
+
+@-webkit-keyframes bot_float { 50% { bottom: -40px; } 100% { bottom: 0px; } }
+@-moz-keyframes bot_float { 50% { bottom: -40px; } 100% { bottom: 0px; } }
+@-ms-keyframes bot_float { 50% { bottom: -40px; } 100% { bottom: 0px; } }
+@keyframes bot_float { 50% { bottom: -40px; } 100% { bottom: 0px; } }
+
+.page {
+	padding:0 16px;
+}
+
+.page__wrapper {
+	background: white;
+	border-radius: 10px;
+	padding: 2em;
+	border:1px solid #ddd;
+	max-width:800px;
+	margin:0 auto 32px auto;
+}
+
+.errors {
+	max-width:580px;
+	margin:0 auto;
+}
+
+.license {
+
+	margin:16px auto;
+
+}
+.license p {
+	font-family: "Courier New", Courier, monospace;
+	font-size:11px;
+	line-height: 14px;
+	white-space: pre-wrap;
+	background: transparent;
+	text-align: justify;
+	-ms-word-break: break-all;
+	word-break: break-all;
+	word-break: break-word;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
+	display: block;
+	border:none;
+}
+.license .btn-license {
+	text-align: center;
+}
+
+
+.install__form {
+	display: none;
+}
+
+#form .license-agreement {
+	visibility: hidden;
+}
+
+.form-control-feedback {
+	top:14px !important;
+}
+
+
+fieldset {
+	max-width:480px;
+	margin:0 auto;
+}
+
+.form-control {
+	border:1px solid #ddd;
+}
+.has-error .form-control, .has-error .form-control:focus,
+.has-success .form-control, .has-success .form-control:focus {
+	border-width:1px !important;
+}
+
+.loader{
+	position: fixed;
+	top:0;
+	left:0;
+	z-index: 5;
+
+	display: none;
+
+	width:100%;
+	height:100%;
+
+	text-align: center;
+	font-size:2rem;
+	font-weight:700;
+	font-family: 'Source Code Pro', sans-serif;
+	letter-spacing: 2px;
+	color:#3A3A3A;
+	background: rgba(255, 255, 255, 0.8);
+}
+
+.loader div {
+	display: table;
+	width:100%;
+	height:100%;
+}
+
+.loader img {
+	width:140px;
+}
+
+.loader span {
+	display: table-cell;
+	vertical-align:middle;
+	text-align: center;
+	width:280px;
+}
+
+#loadingbar {
+	width:240px;
+	height:24px;
+	background-color: #2c3e50;
+	margin:0 auto;
+}
+
+#loadingbar .bar {
+	height:24px;
+	background:#18bc9c;
+	animation:loading 9s ease;
+	-webkit-animation:loading 9s ease;
+	animation-iteration-count:1;
+	-webkit-animation-iteration-count:1; /*Safari and Chrome*/
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	transform: translateZ(0);
+	-webkit-transform: translate(0px, 0);
+	float:left;
+}
+
+@keyframes loading {
+	0% {
+		width:0%;
+	}
+
+	100% {
+		width:100%;
+	}
+}
+
+@-webkit-keyframes loading {
+	0% {
+		width:0%;
+	}
+
+	100% {
+		width:100%;
+	}
+}

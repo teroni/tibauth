@@ -1,0 +1,67 @@
+{
+	"name": "cartalyst/extensions",
+	"description": "A starter kit for building a modular, extensions-based application.",
+	"keywords": [
+		"php",
+		"cartalyst",
+		"laravel",
+		"extensions"
+	],
+	"license": "proprietary",
+	"authors": [
+		{
+			"name": "Cartalyst LLC",
+			"email": "help@cartalyst.com"
+		},
+		{
+			"name": "Ben Corlett",
+			"email": "ben.corlett@cartalyst.com",
+			"role": "Developer"
+		},
+		{
+			"name": "Bruno Gaspar",
+			"email": "bruno.gaspar@cartalyst.com",
+			"role": "Developer"
+		},
+		{
+			"name": "Dan Syme",
+			"email": "dan.syme@cartalyst.com",
+			"role": "Creator & Designer"
+		}
+	],
+	"repositories": [
+		{
+			"type": "composer",
+			"url": "http://packages.cartalyst.com"
+		}
+	],
+	"require": {
+		"php": ">=5.3.0",
+		"cartalyst/dependencies": "~1",
+		"illuminate/database": "~5.0",
+		"illuminate/events": "~5.0",
+		"illuminate/filesystem": "~5.0",
+		"illuminate/cache": "~5.0"
+	},
+	"require-dev": {
+		"illuminate/container": "~5.0",
+		"illuminate/translation": "~5.0",
+		"illuminate/view": "~5.0",
+		"mockery/mockery": "0.8.*"
+	},
+	"autoload": {
+		"classmap": [
+			"src/migrations"
+		],
+		"psr-4": {
+			"Cartalyst\\Extensions\\": "src"
+		}
+	},
+	"extra": {
+		"component":"package",
+		"branch-alias": {
+			"dev-master": "2.0.x-dev"
+		}
+	},
+	"minimum-stability": "dev"
+}

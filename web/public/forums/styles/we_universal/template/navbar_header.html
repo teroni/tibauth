@@ -1,0 +1,31 @@
+<nav role="navigation">
+	<div class="inventea-posts-menu">
+		<ul class="inventea-menu" role="menubar">
+			<!-- EVENT navbar_header_quick_links_before -->
+
+			<!-- IF S_DISPLAY_SEARCH -->
+				<!-- IF S_REGISTERED_USER --><li><a href="{U_SEARCH_SELF}" role="menuitem">{L_SEARCH_SELF}</a></li><!-- ENDIF -->
+				<!-- IF S_USER_LOGGED_IN --><li><a href="{U_SEARCH_NEW}" role="menuitem">{L_SEARCH_NEW}</a></li><!-- ENDIF -->
+				<!-- IF S_LOAD_UNREADS --><li><a href="{U_SEARCH_UNREAD}" role="menuitem">{L_SEARCH_UNREAD}</a></li><!-- ENDIF -->
+				<li><a href="{U_SEARCH_UNANSWERED}" role="menuitem">{L_SEARCH_UNANSWERED}</a></li>
+				<li><a href="{U_SEARCH_ACTIVE_TOPICS}" role="menuitem">{L_SEARCH_ACTIVE_TOPICS}</a></li>
+			<!-- ENDIF -->
+
+			<!-- EVENT navbar_header_quick_links_after -->
+		</ul>
+	</div>
+
+	<div class="inventea-forum-menu">
+		<ul class="inventea-menu" role="menubar">
+			<!-- EVENT overall_header_navigation_prepend -->
+
+			<!-- IF S_DISPLAY_SEARCH --><li><a href="{U_SEARCH}" role="menuitem">{L_SEARCH}</a></li><!-- ENDIF -->
+
+
+			<!-- IF U_MCP --><li><a href="{U_MCP}" title="{L_MCP_SHORT}" role="menuitem">{L_MCP}</a></li><!-- ENDIF -->
+			<!-- IF U_ACP --><li><a href="{U_ACP}" title="{L_ACP_SHORT}" role="menuitem">{L_ACP}</a></li><!-- ENDIF -->
+
+			<!-- EVENT overall_header_navigation_append -->
+		</ul>
+	</div>
+</nav>

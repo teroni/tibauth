@@ -1,0 +1,34 @@
+{
+    "name": "phergie/phergie-irc-parser",
+    "description": "Parser for messages conforming to the IRC protocol",
+    "keywords": [ "irc", "parser" ],
+    "license": "BSD-2-Clause",
+    "support": {
+        "email": "team@phergie.org",
+        "irc": "irc://irc.freenode.net/phergie",
+        "issues": "https://github.com/phergie/phergie-irc-parser/issues",
+        "source": "https://github.com/phergie/phergie-irc-parser"
+    },
+    "require": {
+        "php": ">=5.4.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Phergie\\Irc\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Phergie\\Irc\\Tests\\": "tests"
+        }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/phergie/phergie-irc-parser"
+        }
+    ]
+}

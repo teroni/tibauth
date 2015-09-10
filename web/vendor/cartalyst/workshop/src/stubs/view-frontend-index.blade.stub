@@ -1,0 +1,50 @@
+@extends('layouts/default')
+
+{{-- Page title --}}
+@section('title')
+{{ trans('{{lower_vendor}}/{{lower_name}}::general.title') }} ::
+@parent
+@stop
+
+{{-- Partial Assets --}}
+@section('assets')
+@parent
+@stop
+
+{{-- Inline Styles --}}
+@section('styles')
+@parent
+@stop
+
+{{-- Inline Scripts --}}
+@section('scripts')
+@parent
+<script>
+jQuery(document).ready(function($) {
+
+});
+</script>
+@stop
+
+{{-- Page content --}}
+@section('page')
+<section id="groups">
+
+	<header class="clearfix">
+		<h1>{{ trans('{{lower_vendor}}/{{lower_name}}::general.title') }}</h1>
+
+		<nav class="tertiary-navigation pull-right">
+			@nav('main', 0, 'nav navbar-nav navbar-right')
+		</nav>
+	</header>
+
+	<hr>
+
+	<section class="content">
+
+		<h3>{{ trans('{{lower_vendor}}/{{lower_name}}::general.byline') }}</h3>
+
+	</section>
+
+</section>
+@stop

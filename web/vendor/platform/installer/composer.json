@@ -1,0 +1,69 @@
+{
+	"name": "platform/installer",
+	"description": "Default installer for your Platform application.",
+	"keywords": [
+		"cartalyst",
+		"platform",
+		"laravel",
+		"extension",
+		"installer"
+	],
+	"license": "proprietary",
+	"authors": [
+		{
+			"name": "Cartalyst LLC",
+			"email": "help@cartalyst.com"
+		},
+		{
+			"name": "Ben Corlett",
+			"email": "ben.corlett@cartalyst.com",
+			"role": "Developer"
+		},
+		{
+			"name": "Bruno Gaspar",
+			"email": "bruno.gaspar@cartalyst.com",
+			"role": "Developer"
+		},
+		{
+			"name": "Dan Syme",
+			"email": "dan.syme@cartalyst.com",
+			"role": "Project Lead"
+		},
+		{
+			"name": "Suhayb Wardany",
+			"email": "su.wardany@cartalyst.com",
+			"role": "Developer"
+		}
+	],
+	"repositories": [
+		{
+			"type": "composer",
+			"url": "https://packages.cartalyst.com"
+		}
+	],
+	"require": {
+		"php": ">=5.4.0",
+		"platform/foundation": "2.0.*"
+	},
+	"require-dev": {
+		"cartalyst/testing": "~2.0",
+		"illuminate/config": "~5.0",
+		"illuminate/console": "~5.0",
+		"illuminate/container": "~5.0",
+		"illuminate/database": "~5.0",
+		"illuminate/events": "~5.0",
+		"illuminate/validation": "~5.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"Platform\\Installer\\": "src"
+		}
+	},
+	"extra": {
+		"component": "package",
+		"branch-alias": {
+			"dev-master": "2.0.x-dev"
+		}
+	},
+	"minimum-stability": "dev"
+}

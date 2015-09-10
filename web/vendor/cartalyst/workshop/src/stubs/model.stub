@@ -1,0 +1,36 @@
+<?php namespace {{studly_vendor}}\{{studly_name}}\Models;
+
+use Cartalyst\Attributes\EntityInterface;
+use Illuminate\Database\Eloquent\Model;
+use Platform\Attributes\Traits\EntityTrait;
+use Cartalyst\Support\Traits\NamespacedEntityTrait;
+
+class {{class_name}} extends Model implements EntityInterface {
+
+	use EntityTrait, NamespacedEntityTrait;
+
+	/**
+	 * {@inheritDoc}
+	 */
+	protected $table = '{{table}}';
+
+	/**
+	 * {@inheritDoc}
+	 */
+	protected $guarded = [
+		'id',
+	];
+
+	/**
+	 * {@inheritDoc}
+	 */
+	protected $with = [
+		'values.attribute',
+	];
+
+	/**
+	 * {@inheritDoc}
+	 */
+	protected static $entityNamespace = '{{lower_vendor}}/{{lower_name}}.{{lower_model}}';
+
+}

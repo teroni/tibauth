@@ -1,0 +1,4 @@
+'permissions' => function(Permissions $permissions)
+	{
+		{{content}}
+	},

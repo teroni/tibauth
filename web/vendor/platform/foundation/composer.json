@@ -1,0 +1,85 @@
+{
+	"name": "platform/foundation",
+	"description": "The heartbeat of Platform 2, keeping your application healthy.",
+	"keywords": [
+		"cartalyst",
+		"platform",
+		"laravel",
+		"extension",
+		"foundation"
+	],
+	"license": "proprietary",
+	"authors": [
+		{
+			"name": "Cartalyst LLC",
+			"email": "help@cartalyst.com"
+		},
+		{
+			"name": "Ben Corlett",
+			"email": "ben.corlett@cartalyst.com",
+			"role": "Developer"
+		},
+		{
+			"name": "Bruno Gaspar",
+			"email": "bruno.gaspar@cartalyst.com",
+			"role": "Developer"
+		},
+		{
+			"name": "Dan Syme",
+			"email": "dan.syme@cartalyst.com",
+			"role": "Project Lead"
+		},
+		{
+			"name": "Suhayb Wardany",
+			"email": "su.wardany@cartalyst.com",
+			"role": "Developer"
+		}
+	],
+	"repositories": [
+		{
+			"type": "composer",
+			"url": "https://packages.cartalyst.com"
+		}
+	],
+	"require": {
+		"php": ">=5.4.0",
+		"cartalyst/alerts": "2.0.*",
+		"cartalyst/assetic-filters": "1.2.*",
+		"cartalyst/data-grid": "3.0.*",
+		"cartalyst/extensions": "2.0.*",
+		"cartalyst/filesystem": "3.0.*",
+		"cartalyst/sentinel": "2.0.*",
+		"cartalyst/settings": "2.0.*",
+		"cartalyst/themes": "3.0.*",
+		"cartalyst/widgets": "1.1.*",
+		"dompdf/dompdf": "~0.6",
+		"illuminate/routing": "~5.0",
+		"leafo/scssphp": "~0.1",
+		"league/fractal": "~0.10",
+		"lmammino/jsmin4assetic": "~1.0",
+		"natxet/CssMin": "~3.0",
+		"oyejorge/less.php": "~1.7"
+	},
+	"require-dev": {
+		"illuminate/config": "~5.0",
+		"illuminate/container": "~5.0",
+		"illuminate/http": "~5.0",
+		"symfony/http-kernel": "~2.3",
+		"cartalyst/testing": "~2.0"
+	},
+	"autoload": {
+		"files": [
+			"src/helpers.php"
+		],
+		"psr-4": {
+			"Platform\\Foundation\\": "src"
+		}
+	},
+	"extra": {
+		"component": "platform-package",
+		"branch-alias": {
+			"dev-master": "2.0.x-dev"
+		}
+	},
+	"minimum-stability": "dev"
+}

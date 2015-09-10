@@ -1,0 +1,5 @@
+{
+	"name":        "Default TIB Theme",
+	"slug":        "frontend::tib",
+	"description": "The tib theme."
+}
