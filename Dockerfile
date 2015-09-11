@@ -1,4 +1,4 @@
-FROM  web-base
+FROM  jeronica/web-base
 
 MAINTAINER Jeronica
 

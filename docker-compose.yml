@@ -1,5 +1,5 @@
 web:
-  build: .
+  image: jeronica/tibauth
   ports:
    - "80:80"
   volumes:
